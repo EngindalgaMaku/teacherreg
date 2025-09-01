@@ -33,7 +33,7 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
    - Build Command: `npm run build`
    - Start Command: `npm start`
-   - Port: `8082`
+   - Port: `80`
 
 4. **Other Settings**:
    - Leave other settings at their defaults
@@ -49,7 +49,7 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
 1. **Check the Logs**:
 
-   - Look for "ready started server on 0.0.0.0:8082" in the logs
+   - Look for "ready started server on 0.0.0.0:80" in the logs
 
 2. **Access the API**:
 

@@ -15,11 +15,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Save teacher information
-    teacherRegistry.registerTeacher(
-      data.teacher_id,
-      data.ip_address,
-      data.port
-    );
+    teacherRegistry.registerTeacher(data.teacher_id, data.ip_address, data.port);
 
     return NextResponse.json({ message: "Teacher registered successfully" });
   } catch (error) {
