@@ -23,15 +23,21 @@ export const teacherRegistry = {
       last_updated: new Date().toISOString(),
     };
     console.log(`Registered teacher ${teacherId} at ${ipAddress}:${port}`);
-    console.log(`Current registry: ${JSON.stringify(global.teacherRegistryData)}`);
+    console.log(
+      `Current registry: ${JSON.stringify(global.teacherRegistryData)}`
+    );
   },
 
   getTeacher(teacherId: string): TeacherInfo | null {
-    console.log(`Looking for teacher ${teacherId} in registry: ${JSON.stringify(global.teacherRegistryData)}`);
+    console.log(
+      `Looking for teacher ${teacherId} in registry: ${JSON.stringify(
+        global.teacherRegistryData
+      )}`
+    );
     return global.teacherRegistryData![teacherId] || null;
   },
 
   getAllTeachers(): Record<string, TeacherInfo> {
     return { ...global.teacherRegistryData! };
-  }
+  },
 };

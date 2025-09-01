@@ -33,9 +33,15 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
    - Build Command: `npm run build`
    - Start Command: `npm start`
-   - Port: `80`
+   - Port: `8082`
 
-4. **Other Settings**:
+4. **Port Configuration**:
+   - Ports Exposes: `8082`
+   - Ports Mappings: `8082:8082`
+
+5. **Other Settings**:
+   - Base Directory: `/` (root of the repository)
+   - Publish Directory: `/` (root of the repository)
    - Leave other settings at their defaults
    - You can set up a custom domain if you want
 
@@ -49,7 +55,7 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
 1. **Check the Logs**:
 
-   - Look for "ready started server on 0.0.0.0:80" in the logs
+   - Look for "ready started server on 0.0.0.0:8082" in the logs
 
 2. **Access the API**:
 
@@ -64,17 +70,28 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
 ### Common Issues
 
-1. **Build Failures**:
+1. **Bad Gateway (502) Errors**:
+
+   - Ensure port mapping is correct (8082:8082)
+   - Check that the application is actually running (look for "ready started server" in logs)
+   - Verify that the Build Command and Start Command are properly set
+
+2. **Port Already Allocated Errors**:
+
+   - If you see "Bind for 0.0.0.0:8082 failed: port is already allocated", try a different port
+   - Uncommon ports like 9090, 7000, or 4200 are less likely to be in use
+
+3. **Build Failures**:
 
    - Check Node.js version
    - Verify all package.json dependencies are correctly specified
 
-2. **Runtime Errors**:
+4. **Runtime Errors**:
 
    - Check the Coolify logs for errors
    - Verify port configuration
 
-3. **API Connection Issues**:
+5. **API Connection Issues**:
    - Make sure the teacher dashboard and student clients are using the correct URL
    - Check the network connectivity between components
 

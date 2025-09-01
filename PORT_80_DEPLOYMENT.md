@@ -5,10 +5,12 @@ When deploying the Teacher Registry API to Coolify with port 80, please consider
 ## Important Considerations for Port 80
 
 1. **Port 80 is the standard HTTP port**
+
    - No need to specify the port in URLs (e.g., `https://teacherip.kodleon.com/` instead of `https://teacherip.kodleon.com:8082/`)
    - Simpler for users and client applications
 
 2. **Port 80 may require special permissions**
+
    - On many Linux systems, binding to ports below 1024 requires root privileges
    - Coolify may handle this automatically, but check the documentation if issues arise
 
@@ -21,11 +23,13 @@ When deploying the Teacher Registry API to Coolify with port 80, please consider
 When configuring the deployment in Coolify:
 
 1. **Build Settings**:
+
    - Build Command: `npm run build`
    - Start Command: `npm start`
    - Port: `80`
 
 2. **Environment Variables**:
+
    - No special environment variables are needed
 
 3. **Proxy Settings**:
