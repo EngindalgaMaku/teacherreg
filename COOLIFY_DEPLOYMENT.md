@@ -33,12 +33,12 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
    - Build Command: `npm run build`
    - Start Command: `npm start`
-   - Port: `3003`
+   - Port: `3000` (Next.js default port)
 
 4. **Port Configuration**:
 
-   - Ports Exposes: `3003`
-   - Ports Mappings: `3003:3003`
+   - Ports Exposes: `3000`
+   - Ports Mappings: `3000:3000`
 
 5. **Other Settings**:
    - Base Directory: `/` (root of the repository)
@@ -56,7 +56,7 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 
 1. **Check the Logs**:
 
-   - Look for "ready started server on 0.0.0.0:3003" in the logs
+   - Look for "ready started server on 0.0.0.0:3000" in the logs
 
 2. **Access the API**:
 

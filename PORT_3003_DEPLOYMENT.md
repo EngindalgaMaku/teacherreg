@@ -15,19 +15,23 @@ After encountering issues with port 80 and port 3000 (both already allocated on 
 When configuring the deployment in Coolify:
 
 ### 1. Port Configuration
+
 - **Ports Exposes**: `3003`
 - **Ports Mappings**: `3003:3003`
 
 ### 2. Build Settings
+
 - **Build Command**: `npm run build`
 - **Start Command**: `npm start`
 
 ### 3. Base Directory
+
 - Set to `/` (root of the repository)
 
 ## URL Format
 
 When accessing the API, use the following URL format:
+
 ```
 http://teacherip.kodleon.com:3003
 ```
@@ -61,6 +65,7 @@ If you encounter issues after deployment:
 ## Future Considerations
 
 If port 3003 also causes issues, alternative ports to try include:
+
 - 9090
 - 7000
 - 4200

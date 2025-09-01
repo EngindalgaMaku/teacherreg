@@ -58,7 +58,7 @@ export default function Home() {
           <h2 className="text-xl font-semibold mb-4">Status</h2>
           <div className="flex items-center">
             <div className="h-3 w-3 bg-green-500 rounded-full mr-2"></div>
-            <p>API is running on port 3003</p>
+            <p>API is running on port 3000</p>
           </div>
         </div>
       </div>
