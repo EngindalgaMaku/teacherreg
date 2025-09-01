@@ -36,6 +36,7 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
    - Port: `8082`
 
 4. **Port Configuration**:
+
    - Ports Exposes: `8082`
    - Ports Mappings: `8082:8082`
 

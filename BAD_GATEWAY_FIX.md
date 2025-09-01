@@ -56,6 +56,7 @@ If port 8082 also causes issues, try these alternative ports that are less commo
 - 6060
 
 When changing ports, remember to update:
+
 1. The port in package.json
 2. The port in Coolify configuration
 3. Push the changes to your repository before redeploying
@@ -81,6 +82,7 @@ curl -s https://teacherip.kodleon.com/api/teachers | json_pp
 ## 7. Check with Coolify Support
 
 If all common ports are already allocated, you may need to:
+
 1. Check with your Coolify administrator to see which ports are available
 2. Check if there are unused applications that can be removed to free up ports
 3. Consider using a different server or deployment method if Coolify resources are constrained
