@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,19 +7,21 @@ export default function Home() {
         <h1 className="text-3xl font-bold text-center mb-6">
           Teacher Registry API
         </h1>
-        
+
         <div className="mb-8">
           <p className="text-lg mb-4">
-            This service manages teacher IP addresses for the Classroom Monitoring System.
+            This service manages teacher IP addresses for the Classroom
+            Monitoring System.
           </p>
           <p className="text-gray-600">
-            It allows student clients to discover the teacher&apos;s IP address even when it changes dynamically.
+            It allows student clients to discover the teacher&apos;s IP address
+            even when it changes dynamically.
           </p>
         </div>
-        
+
         <div className="border-t border-gray-200 pt-6">
           <h2 className="text-xl font-semibold mb-4">API Endpoints</h2>
-          
+
           <div className="space-y-4">
             <div className="bg-gray-50 p-4 rounded">
               <h3 className="font-medium text-blue-600">Register a Teacher</h3>
@@ -33,14 +35,16 @@ export default function Home() {
 }`}
               </pre>
             </div>
-            
+
             <div className="bg-gray-50 p-4 rounded">
-              <h3 className="font-medium text-blue-600">Get Teacher Information</h3>
+              <h3 className="font-medium text-blue-600">
+                Get Teacher Information
+              </h3>
               <pre className="bg-gray-800 text-white p-3 rounded mt-2">
-                GET /api/teacher/{'{teacher_id}'}
+                GET /api/teacher/{"{teacher_id}"}
               </pre>
             </div>
-            
+
             <div className="bg-gray-50 p-4 rounded">
               <h3 className="font-medium text-blue-600">List All Teachers</h3>
               <pre className="bg-gray-800 text-white p-3 rounded mt-2">
@@ -49,7 +53,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-200 pt-6 mt-6">
           <h2 className="text-xl font-semibold mb-4">Status</h2>
           <div className="flex items-center">
@@ -59,5 +63,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  )
+  );
 }

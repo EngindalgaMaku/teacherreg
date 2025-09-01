@@ -20,14 +20,17 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 ### 2. Configure the Deployment
 
 1. **Build Pack Selection**:
+
    - Choose "Node.js" as the build pack
    - (Not "Static", "Docker", or "Docker Compose")
 
 2. **Environment Configuration**:
+
    - Set Node.js version to 18 or later (if available)
    - No environment variables are required, but you can add any if needed
 
 3. **Build Settings**:
+
    - Build Command: `npm run build`
    - Start Command: `npm start`
    - Port: `8082`
@@ -45,9 +48,11 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 ## Verification
 
 1. **Check the Logs**:
+
    - Look for "ready started server on 0.0.0.0:8082" in the logs
 
 2. **Access the API**:
+
    - Navigate to the URL provided by Coolify
    - You should see the Teacher Registry API homepage
 
@@ -60,10 +65,12 @@ This guide explains how to deploy the Next.js Teacher Registry API to Coolify.
 ### Common Issues
 
 1. **Build Failures**:
+
    - Check Node.js version
    - Verify all package.json dependencies are correctly specified
 
 2. **Runtime Errors**:
+
    - Check the Coolify logs for errors
    - Verify port configuration
 

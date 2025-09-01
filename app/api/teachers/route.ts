@@ -1,23 +1,15 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-
-// Type for teacher information
-interface TeacherInfo {
-  ip_address: string;
-  port: number;
-  last_updated: string;
-}
-
-// In-memory storage for teacher information (shared with register route)
-const teacherRegistry: Record<string, TeacherInfo> = {};
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import { teacherRegistry } from "@/lib/teacherRegistry";
 
 export async function GET(request: NextRequest) {
   try {
-    return NextResponse.json(teacherRegistry);
+    const teachers = teacherRegistry.getAllTeachers();
+    return NextResponse.json(teachers);
   } catch (error) {
-    console.error('Error listing teachers:', error);
+    console.error("Error listing teachers:", error);
     return NextResponse.json(
-      { error: 'Failed to list teachers' },
+      { error: "Failed to list teachers" },
       { status: 500 }
     );
   }

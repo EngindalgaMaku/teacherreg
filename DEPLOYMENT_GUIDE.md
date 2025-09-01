@@ -26,6 +26,7 @@ This approach is much more likely to work since Next.js/Node.js is very well sup
 You'll need to update the teacher dashboard to use this new API:
 
 1. In `classroom-monitor/src-tauri/src/main.rs`:
+
    - Change the `register_teacher_ip` function to use this new Next.js API endpoint
    - Example: `response = client.post("http://localhost:8082/api/register").json(...)`
 
